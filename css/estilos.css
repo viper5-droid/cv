@@ -1,0 +1,103 @@
+/*RESET CSS BÁSICO, BASADO EN LA VERSIÓN 2.O DEL RESET.CSS DE ERIC MEYER*/
+
+*{
+
+margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline;
+
+}
+
+article, aside, details, figcaption, figure, main, footer, header, hgroup, nav, section { display: block;
+
+} body {
+
+line-height: 1;
+
+} ol, ul {
+
+list-style: none;
+
+} table { border-collapse: collapse; border-spacing: 0;
+
+}
+
+* {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+}
+
+
+
+.header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:12px 16px;
+  position:relative;
+  background-color: black;
+}
+
+.logo {
+    font-weight: 600;
+    text-decoration:none;
+    color: rgb(255, 255, 255);
+}
+
+/* Oculta el checkbox */
+.menu-check{
+  position:absolute;
+  left:-9999px;
+}
+
+/* Botón */
+.menu-btn{
+  font-size:28px;
+  cursor:pointer;
+  user-select:none;
+  color: #fff;
+}
+
+/* Menú oculto en móvil */
+.nav{
+  display:none;
+  position:absolute;
+  left:0;
+  right:0;
+  top:100%;
+  background:#fff;
+  padding:12px 16px;
+  
+}
+
+/* Links en columna */
+.nav a{
+  display:block;
+  padding:10px 0;
+  text-decoration:none;
+  color: #fff;
+}
+
+/* Cuando el checkbox está marcado, se muestra el menú */
+.menu-check:checked ~ .nav{
+  display:block;
+}
+
+
+
+
+@media (min-width:768px){
+  .menu-btn{
+    display:none;
+  }
+
+  .nav{
+    display:flex;
+    position:static;
+    padding:0;
+    background:transparent;
+    gap:16px;
+  }
+
+  .nav a{
+    padding:8px 10px;
+  }
+}
