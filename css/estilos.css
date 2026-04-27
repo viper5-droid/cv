@@ -168,6 +168,7 @@ h1 {
   min-height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #fff;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -195,6 +196,9 @@ h1 {
   background-color: #222;
   color: #fff;
 
+  width: fit-content;
+  margin: 0 auto 40px auto;
+
   font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
@@ -211,7 +215,6 @@ h1 {
 .boton-inicio:active {
   transform: translateY(0);
 }    
-
 
 
  
@@ -264,3 +267,5 @@ footer {
     }
     
 }
+
+   
